@@ -1,0 +1,33 @@
+{
+  "name": "async-iterable-limiter",
+  "version": "0.1.0",
+  "description": "Iterate over async iterable with concurrency limit.",
+  "main": "index.js",
+  "files": ["index.js"],
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpushkin/async-iterable-limiter.git"
+  },
+  "keywords": [
+    "async",
+    "iterable",
+    "concurrency",
+    "limit",
+    "limiter",
+    "promise",
+    "throttle"
+  ],
+  "author": "mpushkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mpushkin/async-iterable-limiter/issues"
+  },
+  "homepage": "https://github.com/mpushkin/async-iterable-limiter#readme",
+  "devDependencies": {
+    "chai": "4.3.4",
+    "mocha": "8.3.2"
+  }
+}
