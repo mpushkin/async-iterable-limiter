@@ -9,7 +9,7 @@ Note: documentation and tests are work in progress, but it should already work :
 
 Simple:
 ```js
-const { iterate } = require('async-iterable-limiter');
+const Limiter = require('async-iterable-limiter');
 
 const cursor = db.collection().find(); // todo: better example
 
@@ -29,3 +29,21 @@ for await (const item of iterable) {
 }
 await limiter.finished();
 ```
+
+## TODO:
+Functionality:
+- [ ] add `stopOnError` parameter (true by default in current implementation)
+- [ ] maybe add `Limiter.map` function that would produce an array with sequential results
+- [ ] maybe add `Limiter.mapIterable` function that would produce another async iterable
+- [ ] make `inProgress` and `concurrency` readonly properties, to prevent mess
+
+Tests:
+- [x] add test for error handling of async iterable
+- [x] add test for error handling of task
+- [ ] add test for invalid input of params
+- [ ] add test for expected behavior of multiple calls of Limiter.ready/finished class
+
+Documentation:
+- [ ] readme
+- [ ] api surface documentation
+- [ ] typescript definitions

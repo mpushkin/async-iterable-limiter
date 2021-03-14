@@ -1,9 +1,11 @@
 {
   "name": "async-iterable-limiter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Iterate over async iterable with concurrency limit.",
   "main": "index.js",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "mocha"
   },
@@ -27,6 +29,7 @@
   },
   "homepage": "https://github.com/mpushkin/async-iterable-limiter#readme",
   "devDependencies": {
+    "aggregate-error": "3.1.0",
     "chai": "4.3.4",
     "mocha": "8.3.2"
   }
