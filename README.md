@@ -1,5 +1,5 @@
 # async-iterable-limiter
-Iterate over async iterable with concurrency limit.
+Iterate over [async iterable](https://javascript.info/async-iterators-generators) with concurrency limit.
 
 Difference from many other similar modules is that it supports iterating over async iterables (like ReadableStream or database cursor).
 

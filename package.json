@@ -29,8 +29,10 @@
   },
   "homepage": "https://github.com/mpushkin/async-iterable-limiter#readme",
   "devDependencies": {
-    "aggregate-error": "3.1.0",
     "chai": "4.3.4",
     "mocha": "8.3.2"
+  },
+  "dependencies": {
+    "aggregate-error": "3.1.0"
   }
 }
